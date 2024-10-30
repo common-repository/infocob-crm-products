@@ -1,0 +1,12 @@
+{
+  "name": "infocob-crm-products",
+  "version": "1.0.0",
+  "author": "Infocob Web",
+  "license": "ISC",
+  "dependencies": {
+    "datatables.net-dt": "^1.12.1",
+    "sortablejs": "^1.13.0",
+    "sweetalert2": "^11.4.4",
+    "tributejs": "^5.1.3"
+  }
+}

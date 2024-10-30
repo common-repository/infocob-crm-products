@@ -1,0 +1,111 @@
+{
+    "name": "infocob/infocob-produits",
+    "description": "",
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "monolog/monolog": "^2.8",
+        "google/apiclient": "^2.7"
+    },
+    "config": {
+        "vendor-dir": "vendor",
+        "platform-check": false,
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Infocob\\CRM\\Products\\": [
+                ""
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\": [
+                "admin/classes"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\CustomPosts\\": [
+                "admin/classes/custom-posts"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Widgets\\": [
+                "admin/classes/widgets"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Imports\\": [
+                "admin/classes/imports"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\": [
+                "admin/classes/catalog"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\": [
+                "admin/classes/catalog/filters"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\": [
+                "admin/classes/catalog/filters/parts"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\PostMeta\\": [
+                "admin/classes/catalog/filters/parts/post_meta"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\Taxonomy\\": [
+                "admin/classes/catalog/filters/parts/taxonomy"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\Acf\\": [
+                "admin/classes/catalog/filters/parts/acf"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\OrderBy\\": [
+                "admin/classes/catalog/filters/parts/order_by"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\ButtonFilter\\": [
+                "admin/classes/catalog/filters/parts/button_filter"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Catalog\\Filters\\Parts\\ButtonReset\\": [
+                "admin/classes/catalog/filters/parts/button_reset"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Infocob\\": [
+                "admin/classes/infocob"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Infocob\\Debug\\": [
+                "admin/classes/infocob/debug"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Infocob\\Tools\\": [
+                "admin/classes/infocob/tools"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Infocob\\Core\\": [
+                "admin/classes/infocob/core"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Infocob\\Entities\\": [
+                "admin/classes/infocob/entities"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Classes\\Infocob\\Traits\\": [
+                "admin/classes/infocob/traits"
+            ],
+            "\\Infocob\\CRM\\Products\\Admin\\Classes\\Upgrades\\": [
+                "admin/classes/upgrades"
+            ],
+            "\\Infocob\\CRM\\Products\\Admin\\Classes\\Upgrades\\Versions\\": [
+                "admin/classes/upgrades/versions"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Controllers\\": [
+                "admin/controllers"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Controllers\\Pages\\": [
+                "admin/controllers/pages"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Controllers\\Settings\\": [
+                "admin/controllers/settings"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Controllers\\Shortcodes\\": [
+                "admin/controllers/shortcodes"
+            ],
+            "Infocob\\CRM\\Products\\Admin\\Controllers\\Shortcodes\\Catalog\\": [
+                "admin/controllers/shortcodes/catalog"
+            ]
+        }
+    },
+    "scripts": {
+        "post-update-cmd": "Google\\Task\\Composer::cleanup",
+        "post-install-cmd": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Drive"
+        ]
+    }
+}

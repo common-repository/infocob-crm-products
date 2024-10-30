@@ -1,0 +1,112 @@
+/*
+ * Meta box Mappings
+ */
+#mappings {
+    .actions-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        > .row {
+            margin: 0 10px;
+        }
+    }
+
+    .content-mappings {
+        display: flex;
+        flex-direction: column;
+
+        & > .row {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin: 10px;
+            border: 1px dotted black;
+            border-radius: 10px;
+            background-color: #ececec;
+
+            .post-container {
+                display: flex;
+                padding: 5px;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+
+                border: 1px dotted #000;
+                border-radius: 10px 10px 0 0;
+
+                > div {
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                    padding: 10px;
+
+                    &.toggle, &.duplicate {
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                    }
+
+                    select, input {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .cond-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 5px;
+
+                > div {
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                    margin: 0 5px;
+
+                    &.delete, &.operator, &.next-condition {
+                        flex-grow: 0;
+                        flex-shrink: 1;
+                    }
+
+                    input, select {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+
+            > .conds-container {
+                border-left: 1px dotted black;
+                border-right: 1px dotted black;
+                border-bottom: 1px dotted black;
+                padding: 10px 5px;
+                border-radius: 0 0 10px 10px;
+
+                .group-conds-container {
+                    border: 1px dotted black;
+                    padding: 10px 5px;
+                    border-radius: 10px;
+                    margin: 20px;
+                    background-color: #e0e0e0;
+                }
+            }
+
+            .group-conds-container, .conds-container {
+                .next-condition {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                > .next-condition {
+                    margin-top: 30px;
+                }
+            }
+
+            &.closed {
+                .conds-container {
+                    display: none;
+                }
+            }
+        }
+    }
+}

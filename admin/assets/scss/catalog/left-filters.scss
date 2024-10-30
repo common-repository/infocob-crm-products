@@ -1,0 +1,99 @@
+/*
+ * Meta box left-filters
+ */
+.filter {
+    float: none;
+    margin: 0;
+}
+
+#left-filters {
+    margin-bottom: 10px;
+
+    .content-left-filters {
+        width: 100%;
+
+        .left-filters-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px 0;
+            border: 1px solid grey;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px grey;
+            padding: 20px;
+
+            &:hover {
+                box-shadow: 1px 1px 4px grey;
+            }
+
+            .handle-container {
+                display: flex;
+                align-items: center;
+                cursor: move;
+            }
+
+            .type {
+                margin: 0 10px;
+                display: flex;
+                flex-basis: 15%;
+                align-items: center;
+            }
+
+            .filter {
+                display: flex;
+                margin: 0 10px;
+                flex-basis: 85%;
+                flex-wrap: wrap;
+
+                .margin {
+                    margin: 5px 5px;
+                    width: 100%;
+                }
+
+                input.multilingual {
+                    margin: 5px 0;
+                }
+
+                &.order-by {
+                    flex-direction: column;
+
+                    .content-products-order-by {
+                        .order-by-container {
+                            display: flex;
+                            flex-direction: column;
+
+                            .main-content {
+                                display: flex;
+                            }
+
+                            .titles-content {
+                                display: flex;
+                            }
+
+                            .actions-container {
+                                margin-bottom: 10px;
+                                border-bottom: 1px dotted;
+                                padding-bottom: 10px;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .actions-container {
+                display: flex;
+                align-items: center;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .actions-container.add {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dotted black;
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 10px;
+    }
+}

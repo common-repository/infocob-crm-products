@@ -1,0 +1,15 @@
+$steps: 1, 2, 3, 4, 5, 6, 7;
+
+@each $step in $steps {
+    #tab-link-icp-step-#{$step} {
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    #tab-panel-icp-step-#{$step} {
+        p {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+/**
+ * Meta box Inventory
+ */
+#post-inventory {
+    margin-bottom: 10px;
+
+    .content-post-inventory {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .post-inventory-container {
+            display: flex;
+            flex-flow: column;
+            margin: 20px;
+
+            border: 1px dotted black;
+            border-radius: 10px;
+            padding: 10px;
+
+            input:not([type='checkbox']), select {
+                width: 100%;
+            }
+
+            > div.acf {
+                margin: 10px 0;
+
+                > .acf-fields {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                }
+
+                > div.post-type, div.acf-field, div.acf-repeater, div.acf-value {
+                    border: none;
+                    margin: 15px 0;
+                }
+
+                > div.meta-field, > div.langs {
+                    margin: 10px 0;
+                }
+
+                > div.langs {
+                    &.invisible {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .actions-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dotted black;
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 10px;
+    }
+}

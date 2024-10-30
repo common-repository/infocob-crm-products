@@ -1,0 +1,41 @@
+#logs-file {
+    width: 100%;
+}
+
+#container-logs {
+    padding-right: 20px;
+
+    // Fix nb page selector
+    .dataTables_wrapper .dataTables_length select {
+        padding: 0 24px 0 8px;
+    }
+}
+
+#logs {
+    pre {
+        outline: 1px solid #ccc;
+        padding: 5px;
+        margin: 5px;
+        text-wrap: unset;
+
+        .string {
+            color: green;
+        }
+
+        .number {
+            color: darkorange;
+        }
+
+        .boolean {
+            color: blue;
+        }
+
+        .null {
+            color: magenta;
+        }
+
+        .key {
+            color: red;
+        }
+    }
+}

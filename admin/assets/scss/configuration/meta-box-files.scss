@@ -1,0 +1,25 @@
+/*
+ * Meta box Files
+ */
+#meta-box-files {
+    h1 {
+        //font-size: 1.3rem;
+        margin: 1em 0;
+
+        &.title {
+            font-weight: 600;
+        }
+    }
+
+    table {
+        &.disabled {
+            opacity: .75;
+            pointer-events: none;
+        }
+
+        label[for="files-use-local"], input[name="files-use-local"], label[for="files-use-cloud"], input[name="files-use-cloud"] {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}

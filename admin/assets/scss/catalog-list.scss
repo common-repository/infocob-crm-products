@@ -1,0 +1,11 @@
+.icp_shortcode_left_filters.column-icp_shortcode_left_filters, .icp_shortcode_right_filters.column-icp_shortcode_right_filters, .icp_shortcode_top_filters.column-icp_shortcode_top_filters {
+    cursor: pointer;
+    color: #2271b1;
+    transition-property: border,background,color;
+    transition-duration: .05s;
+    transition-timing-function: ease-in-out;
+
+    & :hover {
+        color: #135e96;
+    }
+}

@@ -1,0 +1,61 @@
+/*
+ * Meta box Infocob
+ */
+#infocob-filters, #inventory-filters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .content-filter {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .filter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+
+            background: #f3f3f3;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: rgb(0 0 0 / 30%) 1px 1px 3px;
+
+            box-sizing: border-box;
+
+            &:hover {
+                box-shadow: rgb(0 0 0 / 75%) 1px 1px 3px;
+                transition: all 250ms ease-in;
+            }
+
+            .input {
+                padding: 0 5px;
+                font-size: 1rem;
+
+                &.custom {
+                    display: flex;
+                    width: 100%;
+
+                    input, select {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .group-filter {
+            align-items: center;
+            background: #ffffff;
+            border: 1px solid black;
+
+            .content-filter {
+                min-height: 40px;
+                border-radius: 20px;
+                width: 100%;
+            }
+        }
+    }
+}

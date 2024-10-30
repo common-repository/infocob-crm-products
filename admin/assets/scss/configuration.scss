@@ -1,0 +1,102 @@
+@CHARSET "UTF-8";
+@import "variables";
+
+.all-witdh {
+    width: 100%;
+}
+
+.sub-field {
+    margin-top: 10px;
+}
+
+.handle {
+    cursor: move;
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+}
+
+.border-bottom {
+    border-bottom: 2px dotted black;
+    padding-bottom: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+/*
+ * Loader
+ */
+div.icp-loader {
+    display: none;
+    margin: auto;
+
+    &.active {
+        display: flex;
+        justify-content: center;
+        min-height: 100px;
+
+        div {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+
+            &:after {
+                content: " ";
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+                border-radius: 50%;
+                border: 6px solid $color-crm;
+                border-color: $color-crm transparent $color-crm transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+@import "configuration/help-tabs";
+
+@import "configuration/meta-box-infocob";
+
+@import "configuration/meta-box-mappings";
+
+@import "configuration/meta-box-post";
+
+@import "configuration/meta-box-inventory";
+
+@import "configuration/meta-box-files";
+
+@import "configuration/meta-box-import";
+
+/*
+ * Fix multiple-select
+ */
+button[type=button].ms-choice {
+    min-height: 30px;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+div.ms-parent input[type=checkbox] {
+    width: 1rem !important;
+}
+
+.ms-drop input[type="radio"], .ms-drop input[type="checkbox"] {
+    margin-top: 0.1rem;
+}
+
+.ms-choice {
+    height: 30px;
+    line-height: 30px;
+}

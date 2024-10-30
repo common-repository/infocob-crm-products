@@ -1,0 +1,105 @@
+/*
+ * Meta box Post
+ */
+#post-meta, #post-yoast, #post-woocommerce, #files-cloud-meta, #photos-cloud-meta {
+    margin-bottom: 10px;
+
+    .content-post-meta {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row;
+        flex-wrap: wrap;
+
+        .post-meta-container {
+            display: flex;
+            flex-flow: column;
+            margin: 20px;
+            min-width: 260px;
+
+            border: 1px dotted black;
+            border-radius: 10px;
+            padding: 10px;
+
+            input:not([type='checkbox']), select {
+                width: 100%;
+            }
+
+            > div.meta {
+                margin: 10px 0;
+
+                > div.meta-value {
+                    margin: 10px 0;
+                }
+
+                > div.langs {
+                    &.invisible {
+                        visibility: hidden;
+                    }
+                }
+
+                > div.update {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .actions-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dotted black;
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 10px;
+    }
+}
+
+#post-acf {
+    margin-bottom: 10px;
+
+    .content-post-acf {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: row;
+        flex-wrap: wrap;
+
+        .post-acf-container {
+            display: flex;
+            flex-flow: column;
+            margin: 20px;
+
+            border: 1px dotted black;
+            border-radius: 10px;
+            padding: 10px;
+
+            input:not([type='checkbox']), select {
+                width: 100%;
+            }
+
+            > div.acf {
+                margin: 10px 0;
+
+                > div.post-type, div.acf-field, div.acf-repeater, div.acf-value {
+                    margin: 15px 0;
+                }
+
+                > div.meta-field, > div.langs {
+                    margin: 10px 0;
+                }
+
+                > div.langs {
+                    &.invisible {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+    }
+
+    .actions-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px dotted black;
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 10px;
+    }
+}

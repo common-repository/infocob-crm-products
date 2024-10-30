@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+@import "variables";
+
+.all-witdh {
+    width: 100%;
+}
+
+.invisible {
+    display: none;
+}
+
+/*
+ * Loader
+ */
+div.icp-loader {
+    display: none;
+    margin: auto;
+
+    &.active {
+        display: flex;
+        justify-content: center;
+        min-height: 100px;
+
+        div {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+
+            &:after {
+                content: " ";
+                display: block;
+                width: 64px;
+                height: 64px;
+                margin: 8px;
+                border-radius: 50%;
+                border: 6px solid $color-crm;
+                border-color: $color-crm transparent $color-crm transparent;
+                animation: lds-dual-ring 1.2s linear infinite;
+            }
+
+            @keyframes lds-dual-ring {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+
+@import "catalog/general";
+
+@import "catalog/left-filters";
+
+@import "catalog/right-filters";
+
+@import "catalog/top-filters";
+
+@import "catalog/products";

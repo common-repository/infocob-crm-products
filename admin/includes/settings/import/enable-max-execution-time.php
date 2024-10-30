@@ -1,0 +1,1 @@
+<input id="import-enable-max-execution-time" type='checkbox' name='infocob-crm-products-settings[import][enable-max-execution-time]' <?php echo ($enable_max_execution_time ?? false) ? "checked" : ""; ?>>

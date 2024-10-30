@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+@import "variables";
+
+/*
+ * Loader
+ */
+.icp_last_import.column-icp_last_import {
+    &.active {
+        &:after {
+            content: " ";
+            display: inline-block;
+            width: 2px;
+            height: 2px;
+            margin: 0px 8px;
+            border-radius: 50%;
+            border: 6px solid #ff6f00;
+            border-color: #ff6f00 transparent #ff6f00 transparent;
+            animation: lds-dual-ring 1.2s linear infinite;
+        }
+
+        @keyframes lds-dual-ring {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.icp_post_id.column-icp_post_id {
+    cursor: pointer;
+    color: #2271b1;
+    transition-property: border,background,color;
+    transition-duration: .05s;
+    transition-timing-function: ease-in-out;
+
+    & :hover {
+        color: #135e96;
+    }
+}
